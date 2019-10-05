@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const db = require("../models");
 
 var MONGODB_URI =
-  process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+  process.env.MONGODB_URI || "mongodb://user:Pass321@ds229078.mlab.com:29078/heroku_9k7g0hj1";
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 module.exports = function(app) {
